@@ -1,0 +1,21 @@
+# Test your FastAPI endpoints
+
+GET http://127.0.0.1:8000/items
+Accept: application/json
+###
+
+GET http://127.0.0.1:8000/items/0
+Accept: application/json
+###
+
+POST http://127.0.0.1:8000/items?item=strawberry
+Accept: application/json
+###
+
+PUT http://127.0.0.1:8000/items?item=strawberry&new_item=blueberry
+Accept: application/json
+###
+
+DELETE http://127.0.0.1:8000/items?item=blueberry
+Accept: application/json
+###
